@@ -1,14 +1,17 @@
 {
-  "name": "node.advanced",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "cluster": "DEBUG=server:* node example.cluster.js"
-  },
-  "dependencies": {
-    "debug": "^4.2.0",
-    "express": "^4.17.1",
-    "morgan": "^1.10.0"
-  }
+    "name": "node.advanced",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "cluster": "DEBUG=server:* node example.cluster.js",
+        "pm2": "DEBUG=server:* pm2 start example.pm2.js -i 0",
+        "webworker": "DEBUG=server:* node example.webworker.js"
+    },
+    "dependencies": {
+        "debug": "^4.2.0",
+        "express": "^4.17.1",
+        "morgan": "^1.10.0",
+        "web-worker": "^1.0.0"
+    }
 }
